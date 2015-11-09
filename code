@@ -1,0 +1,6 @@
+%matplotlib inline
+import matplotlib.pyplot as plt
+import numpy as np 
+  from las import LASReader
+RJ74 = LASReader('0074_RJ.las', null_subs=np.nan)
+print RJ74.curves.names
